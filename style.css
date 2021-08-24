@@ -3,5 +3,25 @@
     --light-grey: #D1D1D1;
     --dark-grey: #0B1315;
     --blue-grey: #141C1E;
-
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Navigation */
+nav{
+    position: sticky;
+    padding: 10px 0;
+    background-color: var(--light-grey);
+}
+nav a{
+    cursor: pointer;
+    margin: 0 10px;
+}
+nav a:not(:first-child){
+    float: right;
+}
+/* Hero Section */
+.hero{
+    width: 100%;
 }
