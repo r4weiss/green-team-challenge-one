@@ -3,7 +3,7 @@
 2. RESETS
 . TEXT STYLING
 . BUTTON STYLING
-. NAVIGATION
+. NAVIGATION - Done
 . HERO SECTION
 . ABOUT SECTION
 
@@ -12,68 +12,164 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&display=swap");
 
 @font-face {
-	font-family: "Tropikal";
-	src: url("fonts/tropikal-bold.otf") format("opentype");
+  font-family: "Tropikal";
+  src: url("fonts/tropikal-bold.otf") format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Tropikal", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 :root {
-	--light-tan: #ecdabf;
-	--light-grey: #d1d1d1;
-	--dark-grey: #0b1315;
-	--blue-grey: #141c1e;
+  --light-tan: #ecdabf;
+  --light-grey: #d1d1d1;
+  --dark-grey: #0b1315;
+  --blue-grey: #141c1e;
 }
 
 /*----------------------------------------------RESETS---------------------------------------------------------- */
 body {
-	margin: 0;
-	box-sizing: border-box;
-	background: var(--dark-grey);
+  margin: 0;
+  box-sizing: border-box;
+  background: var(--dark-grey);
 }
 
 /*----------------------------------------------TEXT STYLING---------------------------------------------------------- */
 
 body {
-	font-family: "Cormorant", serif;
-	color: var(--light-grey);
+  font-family: "Cormorant", serif;
+  color: var(--light-grey);
 }
 
 h1,
 h2,
 h3 {
-	font-family: "Tropikal", serif;
-	color: var(--light-tan);
+  font-family: "Tropikal", serif;
+  color: var(--light-tan);
 }
 
 /*----------------------------------------------BUTTON STYLING---------------------------------------------------------- */
 
 .btn {
-	border-radius: none;
+  border-radius: none;
 }
 
 /*----------------------------------------------NAVIGATION---------------------------------------------------------- */
+.header {
+  border-bottom: 1px solid var(--light-tan);
+  background-color: var(--dark-grey);
+}
 
-nav {
-	position: sticky;
-	padding: 10px 0;
-	background-color: var(--dark-grey);
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
 }
-nav a {
-	cursor: pointer;
-	margin: 0 10px;
-	color: var(--light-tan);
+
+.hamburger {
+  display: none;
 }
-nav a:not(:first-child) {
-	float: right;
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--light-tan);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--light-tan);
+}
+
+.nav-link:hover {
+  color: var(--light-grey);
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: var(--light-tan);
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: var(--dark-grey);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    /* box-shadow: 0 10px 27px var(--light-tan); */
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }
 
 /*----------------------------------------------HERO SECTION---------------------------------------------------------- */
 
 h1 {
-	color: var(--light-tan);
+  color: var(--light-tan);
 }
 
 .hero {
-	width: 100%;
+  width: 100%;
 }
 
 /*----------------------------------------------ABOUT SECTION---------------------------------------------------------- */
@@ -83,5 +179,5 @@ h1 {
 /*----------------------------------------------IMAGE CAROUSEL SECTION---------------------------------------------------------- */
 
 .image-carousel img {
-	width: 460px;
+  width: 460px;
 }
