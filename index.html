@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 		<link rel="stylesheet" href="./style.css" />
+		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+		<script src="index.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<!-- ---------------NAVIGATION----------------------- -->
@@ -10,7 +13,7 @@
 			<a href="#">About</a>
 			<a href="#">Process</a>
 			<a href="#">Pricing</a>
-			<a href="#">Availability</a>
+			<a href="#" class="reservations">Availability</a>
 		</nav>
 
 		<!-- ---------------MAIN----------------------- -->
@@ -21,7 +24,7 @@
 					Carmine Nolls is a New York-based Personal Chef and Nutritionist,
 					focusing on healthy eating.
 				</h1>
-				<button class="btn">Reserve Now</button>
+				<button class="btn reservations">Reserve Now</button>
 			</section>
 
 			<section class="about">
@@ -130,7 +133,7 @@
 						I am available Sunday - Friday, from 4:30 PM to 10:30 PM. Check my
 						calendar for available dates. Holiday availability will vary.
 					</p>
-					<button>Find a time</button>
+					<button class="reservations">Find a time</button>
 				</div>
 				<p class="p-extra-small">
 					Cancellations must be made more than 7 days in advance of your
@@ -185,7 +188,7 @@
 				<div>
 					<h3>Make a reservation</h3>
 					<ul>
-						<li><a href="#">View availability</a></li>
+						<li><a class="reservations" href="#">View availability</a></li>
 						<li><a href="#">Pricing</a></li>
 						<li><a href="#">Contact me</a></li>
 					</ul>
