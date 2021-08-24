@@ -8,6 +8,7 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
+/* Navigation */
 nav{
     position: sticky;
     padding: 10px 0;
@@ -19,4 +20,8 @@ nav a{
 }
 nav a:not(:first-child){
     float: right;
+}
+/* Hero Section */
+.hero{
+    width: 100%;
 }
