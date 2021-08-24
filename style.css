@@ -1,27 +1,87 @@
-:root{
-    --light-tan: #ECDABF;
-    --light-grey: #D1D1D1;
-    --dark-grey: #0B1315;
-    --blue-grey: #141C1E;
+/* 
+1. IMPORTS
+2. RESETS
+. TEXT STYLING
+. BUTTON STYLING
+. NAVIGATION
+. HERO SECTION
+. ABOUT SECTION
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&display=swap");
+
+@font-face {
+	font-family: "Tropikal";
+	src: url("fonts/tropikal-bold.otf") format("opentype");
 }
-body{
-    margin: 0;
-    box-sizing: border-box;
+
+:root {
+	--light-tan: #ecdabf;
+	--light-grey: #d1d1d1;
+	--dark-grey: #0b1315;
+	--blue-grey: #141c1e;
 }
-/* Navigation */
-nav{
-    position: sticky;
-    padding: 10px 0;
-    background-color: var(--light-grey);
+
+/*----------------------------------------------RESETS---------------------------------------------------------- */
+body {
+	margin: 0;
+	box-sizing: border-box;
+	background: var(--dark-grey);
 }
-nav a{
-    cursor: pointer;
-    margin: 0 10px;
+
+/*----------------------------------------------TEXT STYLING---------------------------------------------------------- */
+
+body {
+	font-family: "Cormorant", serif;
+	color: var(--light-grey);
 }
-nav a:not(:first-child){
-    float: right;
+
+h1,
+h2,
+h3 {
+	font-family: "Tropikal", serif;
+	color: var(--light-tan);
 }
-/* Hero Section */
-.hero{
-    width: 100%;
+
+/*----------------------------------------------BUTTON STYLING---------------------------------------------------------- */
+
+.btn {
+	border-radius: none;
+}
+
+/*----------------------------------------------NAVIGATION---------------------------------------------------------- */
+
+nav {
+	position: sticky;
+	padding: 10px 0;
+	background-color: var(--dark-grey);
+}
+nav a {
+	cursor: pointer;
+	margin: 0 10px;
+	color: var(--light-tan);
+}
+nav a:not(:first-child) {
+	float: right;
+}
+
+/*----------------------------------------------HERO SECTION---------------------------------------------------------- */
+
+h1 {
+	color: var(--light-tan);
+}
+
+.hero {
+	width: 100%;
+}
+
+/*----------------------------------------------ABOUT SECTION---------------------------------------------------------- */
+
+/*----------------------------------------------PROCESS SECTION---------------------------------------------------------- */
+
+/*----------------------------------------------IMAGE CAROUSEL SECTION---------------------------------------------------------- */
+
+.image-carousel img {
+	width: 460px;
 }
