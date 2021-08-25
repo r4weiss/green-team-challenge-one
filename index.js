@@ -31,4 +31,15 @@ window.onload = function () {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
   }
+
+  //bg video
+  const video = document.querySelector('#bg-video');
+  video.addEventListener('ended',function(){
+    this.classList.remove('fade-in');
+    video.play()
+  })
+
+  video.addEventListener('playing',function (){
+    this.classList.add('fade-in')
+  })
 };
