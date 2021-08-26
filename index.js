@@ -11,8 +11,9 @@ window.onload = function () {
   var links = document.getElementsByClassName("reservations");
   for (var i = 0; i < links.length; i++) {
     var link = links[i];
-    link.onclick = function () {
+    link.onclick = function (e) {
       OpenCalendly();
+      e.preventDefault();
     };
   }
 
@@ -33,13 +34,13 @@ window.onload = function () {
   }
 
   //bg video
-  const video = document.querySelector('#bg-video');
-  video.addEventListener('ended',function(){
-    this.classList.remove('fade-in');
-    video.play()
-  })
+  const video = document.querySelector("#bg-video");
+  video.addEventListener("ended", function () {
+    this.classList.remove("fade-in");
+    video.play();
+  });
 
-  video.addEventListener('playing',function (){
-    this.classList.add('fade-in')
-  })
+  video.addEventListener("playing", function () {
+    this.classList.add("fade-in");
+  });
 };
