@@ -200,12 +200,19 @@ h1 {
 }
 
 .fade-in {
-  animation: fadeIn ease-in 6s;
-  -webkit-animation: fadeIn ease-in 6s;
-  -moz-animation: fadeIn ease-in 6s;
-  -o-animation: fadeIn ease-in 6s;
-  -ms-animation: fadeIn ease-in 6s;
+  animation: fadeIn ease-in 4s;
+  -webkit-animation: fadeIn ease-in 4s;
+  -moz-animation: fadeIn ease-in 4s;
+  -o-animation: fadeIn ease-in 4s;
 }
+
+.fade-out {
+  animation: fadeOut ease-in 2s;
+  -webkit-animation: fadeOut ease-in 2s;
+  -moz-animation: fadeOut ease-in 2s;
+  -o-animation: fadeOut ease-in 2s;
+}
+
 
 @keyframes fadeIn {
   0% {
@@ -220,6 +227,23 @@ h1 {
   100% {
     filter: blur(0);
     opacity:1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    filter: blur(0);
+    opacity:1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+
+  100% {
+    filter: blur(2px);
+    opacity:0.1;
   }
 }
 

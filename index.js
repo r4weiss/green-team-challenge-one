@@ -36,10 +36,12 @@ window.onload = function () {
   const video = document.querySelector('#bg-video');
   video.addEventListener('ended',function(){
     this.classList.remove('fade-in');
-    video.play()
+    this.classList.add('fade-out');
+    setTimeout(()=>video.play(),1300)
   })
 
   video.addEventListener('playing',function (){
     this.classList.add('fade-in')
+    this.classList.remove('fade-out')
   })
 };
