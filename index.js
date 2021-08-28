@@ -45,13 +45,15 @@ window.onload = function () {
   }
 
   //bg video
-  const video = document.querySelector("#bg-video");
-  video.addEventListener("ended", function () {
-    this.classList.remove("fade-in");
-    video.play();
-  });
+  const video = document.querySelector('#bg-video');
+  video.addEventListener('ended',function(){
+    this.classList.remove('fade-in');
+    this.classList.add('fade-out');
+    setTimeout(()=>video.play(),1300)
+  })
 
-  video.addEventListener("playing", function () {
-    this.classList.add("fade-in");
-  });
+  video.addEventListener('playing',function (){
+    this.classList.add('fade-in')
+    this.classList.remove('fade-out')
+  })
 };
