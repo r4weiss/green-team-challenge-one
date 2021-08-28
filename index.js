@@ -8,9 +8,20 @@ function OpenCalendly() {
 }
 
 window.onload = function () {
-  var links = document.getElementsByClassName("reservations");
-  for (var i = 0; i < links.length; i++) {
-    var link = links[i];
+  var reservationLinks = document.getElementsByClassName("reservations");
+  for (var i = 0; i < reservationLinks.length; i++) {
+    var link = reservationLinks[i];
+    link.onclick = function (e) {
+      OpenCalendly();
+      e.preventDefault();
+    };
+  }
+
+  var footerReservationLinks = document.getElementsByClassName(
+    "footer-reservations"
+  );
+  for (var i = 0; i < footerReservationLinks.length; i++) {
+    var link = footerReservationLinks[i];
     link.onclick = function (e) {
       OpenCalendly();
       e.preventDefault();

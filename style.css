@@ -268,3 +268,13 @@ h1,
 .image-carousel img {
   width: 460px;
 }
+
+/*----------------------------------------------FOOTER SECTION---------------------------------------------------------- */
+
+footer {
+  margin-top: 5rem;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-around;
+}
