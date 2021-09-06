@@ -61,6 +61,18 @@ h3 {
 	color: var(--light-tan);
 }
 
+h1 {
+	font-size: 64px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
 .p-extra-small {
 	font-size: 18px;
 }
@@ -335,6 +347,15 @@ h1,
 	margin-left: 20%;
 	margin-top: -100px;
 	z-index: 2;
+}
+
+.experience {
+	justify-content: center;
+	margin-top: 200px;
+}
+
+.experience > div {
+	margin: 40px;
 }
 
 /*----------------------------------------------PROCESS SECTION---------------------------------------------------------- */
