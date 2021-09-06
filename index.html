@@ -43,7 +43,7 @@
 					York-based Personal Chef and Nutritionist, focusing on healthy eating.
 				</h1>
 				<button class="btn reservations">Reserve Now</button>
-				<video autoplay muted poster="./images/hero_bg.png" id="bg-video">
+				<video autoplay muted poster="./images/hero_bg.png" class="hero-video">
 					<source src="./videos/chef-moving-bowl.mp4" type="video/mp4" />
 				</video>
 			</section>
@@ -91,43 +91,59 @@
 			</section>
 
 			<section class="process">
-				<h2>Process</h2>
-				<p class="p-large">
-					I bring my process into your home, infusing it with a warm and genuine
-					feeling. I play music music, use fascinating cooking methods, and
-					share my knowledge of food with you so you can see exactly how and why
-					each food is cooked and styled the way it is, all in the comfort of
-					your own home.
-				</p>
-				<div>
-					<!-- video -->
+				<div class="flex process-top-section">
+					<h2>Process</h2>
+					<p class="p-large process-intro">
+						I bring my process into your home, infusing it with a warm and
+						genuine feeling. I play music music, use fascinating cooking
+						methods, and share my knowledge of food with you so you can see
+						exactly how and why each food is cooked and styled the way it is,
+						all in the comfort of your own home.
+					</p>
 				</div>
-				<div>
-					<div>
-						<h3>Style</h3>
-						<p>
-							My specialty is whatever your palate can dream. I’ve cooked with
-							chefs from across the world, from South American to Mediterranean,
-							with my strongest skills being in the Asian cuisine.
-						</p>
+
+				<div class="flex process-bottom-section">
+					<div class="process-video-container">
+						<video
+							autoplay
+							muted
+							poster="images/process-video-placeholder.png"
+							class="process-video"
+						>
+							<source src="videos/chef-cooking-food.mp4" type="video/mp4" />
+						</video>
 					</div>
-					<div>
-						<h3>Nutrition</h3>
-						<p>
-							I am a cook second and a nutritionist first. I am vegetable
-							forward, utilizing seasonal ingredients, and modern cooking
-							techniques. I will cook for you healthy meals that are bursting
-							with flavor and richness for a truly memorable dining experience.
-						</p>
-					</div>
-					<div>
-						<h3>Music</h3>
-						<p>
-							I am a cook second and a nutritionist first. I am vegetable
-							forward, utilizing seasonal ingredients, and modern cooking
-							techniques. I will cook for you healthy meals that are bursting
-							with flavor and richness for a truly memorable dining experience.
-						</p>
+
+					<div class="process-description">
+						<div class="the-menu">
+							<h3>The Menu</h3>
+							<p class="p-small">
+								I am a cook second and a nutritionist first. I am vegetable
+								forward, utilizing seasonal ingredients, and modern cooking
+								techniques. I will cook for you healthy meals that are bursting
+								with flavor and richness for a truly memorable dining
+								experience.
+							</p>
+							<br />
+							<p class="p-small">
+								My specialty is whatever your palate can dream. I’ve cooked with
+								chefs from across the world, from Mexico to the Mediterranean,
+								including Asian and Indian cuisines.
+							</p>
+							<br />
+							<a href="#" class="p-small">Learn more</a>
+						</div>
+
+						<div class="music">
+							<h3>Music</h3>
+							<p class="p-small">
+								For me, music is a critical part of the cooking process. I play
+								curated playlist based on the cuisine we will be cooking
+								together, to complete the ambience.
+							</p>
+							<br />
+							<a href="#" class="p-small">Learn more</a>
+						</div>
 					</div>
 				</div>
 			</section>

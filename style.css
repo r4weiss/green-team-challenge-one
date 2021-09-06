@@ -223,7 +223,7 @@ h1 {
 	background-color: rgba(0, 0, 0, 0.36);
 }
 
-#bg-video {
+.hero-video {
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
@@ -359,6 +359,55 @@ h1,
 }
 
 /*----------------------------------------------PROCESS SECTION---------------------------------------------------------- */
+
+.process-top-section {
+	margin-top: 230px;
+}
+
+.process h2:nth-of-type(1) {
+	width: 40%;
+	padding-left: 200px;
+}
+
+.process-intro {
+	width: 60%;
+	padding-right: 220px;
+}
+
+.process-bottom-section {
+	margin-top: 80px;
+}
+
+.process-video-container {
+	width: 40%;
+	padding-left: 200px;
+}
+
+.process-video {
+	object-fit: cover;
+	width: 30%;
+	min-width: 400px;
+}
+
+.process-description {
+	/* position: relative; */
+	width: 60%;
+	padding-right: 220px;
+}
+
+.the-menu h3 {
+	margin-bottom: 36px;
+}
+
+.music h3 {
+	margin-top: 80px;
+	margin-bottom: 36px;
+}
+.process-description div a {
+	color: var(--light-tan);
+	text-decoration: underline;
+	float: right;
+}
 
 /*----------------------------------------------IMAGE CAROUSEL SECTION---------------------------------------------------------- */
 
