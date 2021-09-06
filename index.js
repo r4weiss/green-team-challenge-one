@@ -67,6 +67,19 @@ window.onload = function () {
 		this.classList.add("fade-in")
 		this.classList.remove("fade-out")
 	})
+
+	//pricing-video
+	const video = document.querySelector(".pricing-video")
+	video.addEventListener("ended", function () {
+		this.classList.remove("fade-in")
+		this.classList.add("fade-out")
+		setTimeout(() => video.play(), 1300)
+	})
+
+	video.addEventListener("playing", function () {
+		this.classList.add("fade-in")
+		this.classList.remove("fade-out")
+	})
 }
 
 // https://flickity.metafizzy.co/
