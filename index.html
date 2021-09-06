@@ -7,6 +7,10 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+		/>
 	</head>
 	<body>
 		<!-- ---------------NAVIGATION----------------------- -->
@@ -149,12 +153,25 @@
 			</section>
 
 			<section class="image-carousel">
-				<div>
-					<img src="images/food-1.jpg" alt="bowl of food" />
-					<img src="images/food-2.jpg" alt="bowl of soup" />
-					<img src="images/food-3.jpg" alt="chef cooking in pot" />
-					<img src="images/food-4.jpg" alt="sliced meat on board" />
-					<img src="images/food-5.jpg" alt="sprinkling spice on food" />
+				<div
+					class="gallery js-flickity"
+					data-flickity-options='{ "wrapAround": true }'
+				>
+					<div class="gallery-cell">
+						<img src="images/food-1.jpg" alt="bowl of food" />
+					</div>
+					<div class="gallery-cell">
+						<img src="images/food-2.jpg" alt="bowl of soup" />
+					</div>
+					<div class="gallery-cell">
+						<img src="images/food-3.jpg" alt="chef cooking in pot" />
+					</div>
+					<div class="gallery-cell">
+						<img src="images/food-4.jpg" alt="sliced meat on board" />
+					</div>
+					<div class="gallery-cell">
+						<img src="images/food-5.jpg" alt="sprinkling spice on food" />
+					</div>
 				</div>
 			</section>
 
@@ -241,11 +258,12 @@
 			</div>
 		</footer>
 
+		<script src="index.js" type="text/javascript"></script>
 		<script
 			src="https://assets.calendly.com/assets/external/widget.js"
 			type="text/javascript"
 			async
 		></script>
-		<script src="index.js" type="text/javascript"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	</body>
 </html>

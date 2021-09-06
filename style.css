@@ -411,6 +411,12 @@ h1,
 
 /*----------------------------------------------IMAGE CAROUSEL SECTION---------------------------------------------------------- */
 
+/* external css: flickity.css */
+
+.image-carousel {
+	margin-top: 160px;
+}
+
 .image-carousel img {
 	width: 460px;
 }

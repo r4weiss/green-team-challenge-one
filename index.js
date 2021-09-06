@@ -1,5 +1,3 @@
-//
-//
 function OpenCalendly() {
 	Calendly.initPopupWidget({
 		url: "https://calendly.com/chefcarminenolls/personal-chef?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=ecdabf",
@@ -70,3 +68,6 @@ window.onload = function () {
 		this.classList.remove("fade-out")
 	})
 }
+
+// https://flickity.metafizzy.co/
+// external js: flickity.pkgd.js
