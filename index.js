@@ -42,44 +42,30 @@ window.onload = function () {
 		navMenu.classList.remove("active")
 	}
 
-	//hero-video
-	const video = document.querySelector(".hero-video")
-	video.addEventListener("ended", function () {
-		this.classList.remove("fade-in")
-		this.classList.add("fade-out")
-		setTimeout(() => video.play(), 1300)
-	})
+	function addVideoEffect(selector) {
+		const video = document.querySelector(selector)
 
-	video.addEventListener("playing", function () {
-		this.classList.add("fade-in")
-		this.classList.remove("fade-out")
-	})
+		video.addEventListener("ended", function () {
+			this.classList.remove("fade-in")
+			this.classList.add("fade-out")
+			setTimeout(() => video.play(), 1300)
+		})
+
+		video.addEventListener("playing", function () {
+			this.classList.add("fade-in")
+			this.classList.remove("fade-out")
+		})
+
+	}
+
+	//hero-video
+	addVideoEffect(".hero-video")
 
 	//process-video
-	const video = document.querySelector(".process-video")
-	video.addEventListener("ended", function () {
-		this.classList.remove("fade-in")
-		this.classList.add("fade-out")
-		setTimeout(() => video.play(), 1300)
-	})
-
-	video.addEventListener("playing", function () {
-		this.classList.add("fade-in")
-		this.classList.remove("fade-out")
-	})
+	addVideoEffect(".process-video")
 
 	//pricing-video
-	const video = document.querySelector(".pricing-video")
-	video.addEventListener("ended", function () {
-		this.classList.remove("fade-in")
-		this.classList.add("fade-out")
-		setTimeout(() => video.play(), 1300)
-	})
-
-	video.addEventListener("playing", function () {
-		this.classList.add("fade-in")
-		this.classList.remove("fade-out")
-	})
+	addVideoEffect(".pricing-video")
 }
 
 // https://flickity.metafizzy.co/
